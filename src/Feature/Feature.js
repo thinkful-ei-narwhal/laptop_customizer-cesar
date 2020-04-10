@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Option from './Option';
+import Option from '../Option/Option';
 import slugify from 'slugify';
 
 class Feature extends Component {

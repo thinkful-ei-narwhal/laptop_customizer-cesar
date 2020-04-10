@@ -1,7 +1,7 @@
 
 import React, { Component } from 'react';
-import Summary from './Selected';
-import Total from './Total';
+import Summary from '../Selected/Selected';
+import Total from '../Total/Total';
 
 
 class Selected extends Component {
