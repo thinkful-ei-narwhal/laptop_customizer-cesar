@@ -3,9 +3,6 @@ import React, { Component } from 'react';
 import Features from './components/Features';
 import Summary from './components/Summary';
 import Total from './components/Total';
-
-
-
 import './App.css';
 
 // This object will allow us to
@@ -62,6 +59,8 @@ class App extends Component {
             updateFeature={this.updateFeature} 
             />
           </form>
+          {/* split to make only one */}
+          
           <section className="main__summary">
             <h2>Your cart</h2>
             <Summary
