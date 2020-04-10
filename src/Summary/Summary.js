@@ -1,15 +1,16 @@
-
 import React, { Component } from 'react';
-import Summary from '../Selected/Selected';
+import Selected from '../Selected/Selected';
 import Total from '../Total/Total';
+import './Summary.css'
 
 
-class Selected extends Component {
+
+class Summary extends Component {
     render() {
       return (
         <section className="main__summary">
             <h2>Your cart</h2>
-            <Summary
+            <Selected
             usCurrencyFormat={this.props.usCurrencyFormat} 
             selected={this.props.selected} 
             />
@@ -23,4 +24,4 @@ class Selected extends Component {
     }
   }
 
-export default Selected;
+export default Summary;

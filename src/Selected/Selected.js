@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import './Selected.css'
 
-class Summary extends Component {
+class Selected extends Component {
     render() {
         return Object.keys(this.props.selected).map((feature, idx) => {
             const featureHash = feature + '-' + idx;
@@ -20,4 +21,4 @@ class Summary extends Component {
     }
 }
 
-export default Summary;
+export default Selected;

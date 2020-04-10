@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import slugify from 'slugify';
-
+import './Option.css';
 
 class Option extends Component {
     render(){
