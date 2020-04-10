@@ -1,24 +1,26 @@
+
 import React, { Component } from 'react';
+import Summary from './Selected';
+import Total from './Total';
 
-class Summary extends Component {
+
+class Selected extends Component {
     render() {
-        return Object.keys(this.props.selected).map((feature, idx) => {
-            const featureHash = feature + '-' + idx;
-            const selectedOption = this.props.selected[feature];
-
+      return (
+        <section className="main__summary">
+            <h2>Your cart</h2>
+            <Summary
+            usCurrencyFormat={this.props.usCurrencyFormat} 
+            selected={this.props.selected} 
+            />
             
-            return (
-              <div className="summary__option" key={featureHash}>
-                <div className="summary__option__label">{feature} </div>
-                <div className="summary__option__value">{selectedOption.name}</div>
-                <div className="summary__option__cost">
-                  {this.props.usCurrencyFormat.format(selectedOption.cost)}
-                </div>
-              </div>
-            );
-          });
+            <Total
+            usCurrencyFormat={this.props.usCurrencyFormat} 
+            selected={this.props.selected} 
+            />
+        </section>
+      );
     }
-}
+  }
 
-
-export default Summary;
+export default Selected;
