@@ -52,6 +52,7 @@ class App extends Component {
             <h2>Customize your laptop</h2>
             
             <Features 
+            
             usCurrencyFormat={USCurrencyFormat} 
             features={this.props.features} 
             selected={this.state.selected} 

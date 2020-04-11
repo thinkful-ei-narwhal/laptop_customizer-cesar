@@ -8,7 +8,6 @@ import Feature from '../Feature/Feature';
 class Feutures extends Component {
     render() {
         const {updateFeature, usCurrencyFormat}=this.props
-
         return Object.keys(this.props.features).map((feature, idx) => {
             
           const featureHash = feature + '-' + idx;
